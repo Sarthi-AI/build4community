@@ -1,0 +1,55 @@
+{
+  "name": "CheckSchemeEligibility",
+  "auto": true,
+  "responses": [
+    {
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": [
+            "Based on your details, you are eligible for the following schemes: ..."
+          ]
+        }
+      ]
+    }
+  ],
+  "parameters": [
+    {
+      "name": "age",
+      "dataType": "@sys.number",
+      "value": "$age",
+      "isList": false
+    },
+    {
+      "name": "gender",
+      "dataType": "@gender",
+      "value": "$gender",
+      "isList": false
+    },
+    {
+      "name": "income",
+      "dataType": "@sys.number",
+      "value": "$income",
+      "isList": false
+    },
+    {
+      "name": "caste",
+      "dataType": "@sys.any",
+      "value": "$caste",
+      "isList": false
+    },
+    {
+      "name": "region",
+      "dataType": "@sys.geo-city",
+      "value": "$region",
+      "isList": false
+    },
+    {
+      "name": "disability_status",
+      "dataType": "@sys.any",
+      "value": "$disability_status",
+      "isList": false
+    }
+  ]
+}
